@@ -15,6 +15,9 @@
   font-size: calc(10px + 2vmin);
   color: black;
 }
+.nav-link a {
+ color: red;
+}
 
 
 .active {
@@ -24,4 +27,11 @@
 }
 .noDark {
   isolation: isolate;
+}
+
+.lang-btn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 30px;
 }

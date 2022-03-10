@@ -20,11 +20,12 @@
 }
 
 
-.active {
+.active span {
   color: #595959;
   background-color: rgba(141, 141, 141, 0.234);
   border-radius: 20px;
 }
+
 .noDark {
   isolation: isolate;
 }

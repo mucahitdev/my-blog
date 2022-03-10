@@ -23,40 +23,42 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="collapse navbar-collapse ms-5 justify-content-center"
+            className="collapse navbar-collapse  justify-content-center"
             id="navbarCollapse"
           >
-            <div className="navbar-nav">
-              <IntlProvider locale={data} messages={nav[data]}>
-                <NavLink
-                  activeclassname="active"
-                  to="/"
-                  className="nav-link  fw-bold"
-                >
-                  <FormattedMessage id="home" />
-                </NavLink>
-                <NavLink
-                  activeclassname="active"
-                  to="about"
-                  className="nav-link  fw-bold"
-                >
-                  <FormattedMessage id="about" />
-                </NavLink>
-                <NavLink
-                  activeclassname="active"
-                  to="/projects"
-                  className="nav-link  fw-bold"
-                >
-                  <FormattedMessage id="projects" />
-                </NavLink>
-                <NavLink
-                  activeclassname="active"
-                  to="/contact"
-                  className="nav-link  fw-bold"
-                >
-                  <FormattedMessage id="contact" />
-                </NavLink>
-              </IntlProvider>
+            <div className="">
+              <div className="navbar-nav">
+                <IntlProvider locale={data} messages={nav[data]}>
+                  <NavLink
+                    activeclassname="active"
+                    to="/"
+                    className="nav-link fw-bold"
+                  >
+                    <span className="px-3 py-2"><FormattedMessage id="home" /></span>
+                  </NavLink>
+                  <NavLink
+                    activeclassname="active"
+                    to="about"
+                    className="nav-link  fw-bold"
+                  >
+                    <span className="px-3 py-2"><FormattedMessage id="about" /></span>
+                  </NavLink>
+                  <NavLink
+                    activeclassname="active"
+                    to="/projects"
+                    className="nav-link  fw-bold"
+                  >
+                    <span className="px-3 py-2"><FormattedMessage id="projects" /></span>
+                  </NavLink>
+                  <NavLink
+                    activeclassname="active"
+                    to="/contact"
+                    className="nav-link  fw-bold"
+                  >
+                    <span className="px-3 py-2"><FormattedMessage id="contact" /></span>
+                  </NavLink>
+                </IntlProvider>
+              </div>
             </div>
           </div>
           {data === "en-US" ? (
@@ -64,14 +66,14 @@ function Header() {
               className="btn  lang-btn shadow-none"
               onClick={() => handleChange("tr-TR")}
             >
-            🇹🇷
+              🇹🇷
             </button>
           ) : (
             <button
               className="btn  lang-btn shadow-none"
               onClick={() => handleChange("en-US")}
             >
-             🇬🇧
+              🇬🇧
             </button>
           )}
         </div>

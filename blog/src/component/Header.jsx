@@ -3,6 +3,8 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useData } from "../Context/DataContext";
 import { IntlProvider, FormattedMessage } from "react-intl";
 import { nav } from "./lang/Langs";
+import { Switch, useDarkreader } from 'react-darkreader';
+
 
 function Header() {
   const { data, setData } = useData();
@@ -10,6 +12,8 @@ function Header() {
     setData(lang);
     console.log(data);
   };
+  const [isDark, { toggle }] = useDarkreader(false);
+
   return (
     <div>
       <nav className="navbar navbar-expand-sm navbar-light bg-light fixed-top">
@@ -22,10 +26,12 @@ function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
+          
           <div
             className="collapse navbar-collapse  justify-content-center"
             id="navbarCollapse"
           >
+            <Switch checked={isDark} onChange={toggle} />
             <div className="">
               <div className="navbar-nav">
                 <IntlProvider locale={data} messages={nav[data]}>

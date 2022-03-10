@@ -26,7 +26,7 @@
   border-radius: 20px;
 }
 .noDark {
-  isolation: isolate;
+  isolation: isolate !important
 }
 
 .lang-btn {
@@ -48,4 +48,18 @@
 }
 
 .contact  {
-  list-style-type: none;}
+  list-style-type: none;
+}
+
+.darkmode-layer, .darkmode-toggle {
+  z-index: 500;
+}
+
+.img-thumbnail {
+  transition: transform .25s, visibility .25s ease-in;
+  isolation: isolate;
+}
+
+.img-thumbnail:hover {
+ transform: scale(1.5);
+}

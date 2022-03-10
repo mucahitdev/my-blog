@@ -25,7 +25,6 @@
   background-color: rgba(141, 141, 141, 0.234);
   border-radius: 20px;
 }
-
 .noDark {
   isolation: isolate;
 }
@@ -36,3 +35,17 @@
   right: 15px;
   font-size: 30px;
 }
+
+
+.contact a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 5vh;
+}
+
+.contact a:hover, a:focus {
+  color: #00000034;
+}
+
+.contact  {
+  list-style-type: none;}

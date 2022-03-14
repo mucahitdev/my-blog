@@ -53,6 +53,36 @@ function Projects() {
           tagName: '#firebase'
         }
       ]
+    },
+    {
+      name: "Bergenfy",
+      description: "Bergen'in anısına yapmış olduğum, bazı müziklerini ve fotoğraflarını topladığım site.",
+      demo: "https://bergenfy.netlify.app",
+      code: "https://github.com/mucahitkok/bergenfy",
+      image: "https://serving.photos.photobox.com/39099388b10602a0f15d87f852468ed57223a68afd2bd7d5743a58c4c2b7413450204b79.jpg",
+      tags: [
+        {
+          tagName: '#react'
+        },
+        {
+          tagName: '#tailwind'
+        }
+      ]
+    },
+    {
+      name: "Love Calculator",
+      description: "İki isim arasındaki uyumu bir takım algoritmaya dayanarak hesaplayan app.",
+      demo: "https://lovecalculator-tr.netlify.app/",
+      code: "https://github.com/mucahitkok/love-colculator",
+      image: "https://serving.photos.photobox.com/629407374e99849d3ce91578780ebe43d97772f79c15cdf2c76c7401876889f7842bdbb5.jpg",
+      tags: [
+        {
+          tagName: '#react'
+        },
+        {
+          tagName: '#bootstrap'
+        }
+      ]
     }
   ]
 return (

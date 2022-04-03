@@ -4,11 +4,13 @@ import { MdSchool, MdComputer} from 'react-icons/md';
 import { GiCampingTent, GiPistolGun } from 'react-icons/gi';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
+import kamp from '../images/kamp.jpg'
 
 
 
 
 function About() {
+  console.log(kamp);
   return (
     <div className='mt-5'>
       <VerticalTimeline>
@@ -50,7 +52,7 @@ function About() {
           <p>
             Türkiye İzcilik Federasyonu'da Yardımcı lider.
           </p>
-          <img className='img-thumbnail' src='https://serving.photos.photobox.com/01632520df10e8a44ea3c8ae26a3688e56475a277a04c3bd63aa19aaf58d238d2f85d9d3.jpg' alt="" />
+          <img className='img-thumbnail' src={kamp} alt="" />
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
